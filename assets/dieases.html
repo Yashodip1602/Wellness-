@@ -20,9 +20,17 @@
             margin-top: 40px;
         }
 
+        .img-container {
+            display: flex;
+            justify-content: center;
+        }
+
         .img-container img {
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
         }
 
         ul li {
@@ -51,7 +59,7 @@
             </ul>
 
             <div class="text-center img-container my-3">
-                <img src="https://images.pexels.com/photos/7345467/pexels-photo-7345467.jpeg" width="400" height="300">
+                <img src="https://images.pexels.com/photos/7345467/pexels-photo-7345467.jpeg" class="img-fluid" alt="blood pressure image">
             </div>
 
             <h5><b>Exercises that help maintain Blood Pressure:</b></h5>
@@ -81,7 +89,7 @@
             </ul>
 
             <div class="text-center img-container my-3">
-                <img src="https://images.pexels.com/photos/6941098/pexels-photo-6941098.jpeg" width="400" height="300">
+                <img src="https://images.pexels.com/photos/6941098/pexels-photo-6941098.jpeg" class="img-fluid" alt="diabetes image">
             </div>
 
             <h5><b>Exercises for Diabetes:</b></h5>
@@ -107,9 +115,9 @@
             </ul>
 
             <div class="text-center my-3">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/3EMSCHVsEFc?si=Cw3IPWIYGK603r0_" frameborder="0"
-                    allowfullscreen></iframe>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/3EMSCHVsEFc?si=Cw3IPWIYGK603r0_" title="Cancer Info Video" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
