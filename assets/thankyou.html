@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You</title>
+    <title>Thank You - Fitness & Health</title>
     <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/dreamstime-template-198954292.jpg" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
@@ -12,10 +12,14 @@
 
     <style>
         body {
-            background: linear-gradient(to right, #6dd5fa, #2980b9);
+            /* background: linear-gradient(to right, #6dd5fa, #2980b9); */
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/020/411/854/small/healthcare-heart-shape-with-blue-cardio-pulse-heartbeat-lone-medical-abstract-background-modern-simple-design-icon-sign-or-logo-design-vector.jpg);
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
             height: 100vh;
             display: flex;
-            justify-content: center;
+            justify-content: start;
             align-items: center;
             color: white;
         }
@@ -34,13 +38,28 @@
             font-weight: bold;
             letter-spacing: 2px;
         }
+
+
+
+        /* Mobile Responsive Tweaks */
+        @media (max-width: 480px) {
+            .welcome-box {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="welcome-box">
+    <div class="welcome-box mx-4">
         <h1><i><u>THANKS FOR VISITING</u></i></h1>
+        <!-- visit again message -->
+        <p class="mt-3 " style="font-size: 20px;">Visit us again for more tips and information to lead a healthier life!</p>
     </div>
 
     <!-- Bootstrap JS -->
